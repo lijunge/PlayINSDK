@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003795742284580A00B2566E /* PIAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 003795732284580A00B2566E /* PIAuth.m */; };
+		0037957A22845BA100B2566E /* PIPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0037957922845BA100B2566E /* PIPlay.m */; };
+		42A18E6422927B7F0045E5E0 /* PISocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A18E6322927B7F0045E5E0 /* PISocket.m */; };
+		42A18E672292B0440045E5E0 /* PIStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A18E662292B0440045E5E0 /* PIStream.m */; };
+		F94AB96622842E4C0091358A /* PICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB94122842E4A0091358A /* PICommon.m */; };
+		F94AB96822842E4C0091358A /* PIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB94422842E4A0091358A /* PIUtil.m */; };
+		F94AB96922842E4C0091358A /* PIConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB94822842E4A0091358A /* PIConfigure.m */; };
+		F94AB96A22842E4C0091358A /* PIImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB94D22842E4A0091358A /* PIImageInfo.m */; };
+		F94AB96B22842E4C0091358A /* PIGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB94E22842E4A0091358A /* PIGameView.m */; };
+		F94AB96D22842E4C0091358A /* PIPing.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB95022842E4B0091358A /* PIPing.m */; };
+		F94AB96E22842E4C0091358A /* PIHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB95122842E4B0091358A /* PIHttpManager.m */; };
+		F94AB96F22842E4C0091358A /* PIDownloadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB95222842E4B0091358A /* PIDownloadView.m */; };
+		F94AB97022842E4C0091358A /* PIPingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB95522842E4B0091358A /* PIPingHelper.m */; };
+		F94AB97122842E4C0091358A /* PICheck.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB95622842E4B0091358A /* PICheck.m */; };
+		F94AB97222842E4C0091358A /* PIDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB95822842E4B0091358A /* PIDeviceInfo.m */; };
+		F94AB97322842E4C0091358A /* PITouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB95922842E4B0091358A /* PITouchView.m */; };
+		F94AB97422842E4C0091358A /* PIReport.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB95E22842E4C0091358A /* PIReport.m */; };
+		F94AB97522842E4C0091358A /* PIVideoDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB96022842E4C0091358A /* PIVideoDisplay.m */; };
+		F94AB97622842E4C0091358A /* PlayInView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB96222842E4C0091358A /* PlayInView.m */; };
+		F94AB97722842E4C0091358A /* PIVideoDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB96522842E4C0091358A /* PIVideoDecode.m */; };
+		F94AB97A228431710091358A /* PlayIn.m in Sources */ = {isa = PBXBuildFile; fileRef = F94AB979228431710091358A /* PlayIn.m */; };
+		F94AB97C228432C60091358A /* libplayin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F94AB93822842E1A0091358A /* libplayin.a */; };
+		F9C6BC2F22818B3400E9B4A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C6BC2E22818B3400E9B4A1 /* AppDelegate.m */; };
+		F9C6BC3222818B3400E9B4A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C6BC3122818B3400E9B4A1 /* ViewController.m */; };
+		F9C6BC3722818B3700E9B4A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C6BC3622818B3700E9B4A1 /* Assets.xcassets */; };
+		F9C6BC3A22818B3700E9B4A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C6BC3822818B3700E9B4A1 /* LaunchScreen.storyboard */; };
+		F9C6BC3D22818B3700E9B4A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C6BC3C22818B3700E9B4A1 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F94AB93622842E1A0091358A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		003795722284580A00B2566E /* PIAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIAuth.h; sourceTree = "<group>"; };
+		003795732284580A00B2566E /* PIAuth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIAuth.m; sourceTree = "<group>"; };
+		0037957822845BA100B2566E /* PIPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIPlay.h; sourceTree = "<group>"; };
+		0037957922845BA100B2566E /* PIPlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIPlay.m; sourceTree = "<group>"; };
+		42A18E6122927B760045E5E0 /* Packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Packet.h; sourceTree = "<group>"; };
+		42A18E6222927B7F0045E5E0 /* PISocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PISocket.h; sourceTree = "<group>"; };
+		42A18E6322927B7F0045E5E0 /* PISocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PISocket.m; sourceTree = "<group>"; };
+		42A18E652292B0440045E5E0 /* PIStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIStream.h; sourceTree = "<group>"; };
+		42A18E662292B0440045E5E0 /* PIStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIStream.m; sourceTree = "<group>"; };
+		F94AB93822842E1A0091358A /* libplayin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libplayin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94AB94122842E4A0091358A /* PICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICommon.m; sourceTree = "<group>"; };
+		F94AB94222842E4A0091358A /* PIGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIGameView.h; sourceTree = "<group>"; };
+		F94AB94422842E4A0091358A /* PIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIUtil.m; sourceTree = "<group>"; };
+		F94AB94522842E4A0091358A /* PITouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PITouchView.h; sourceTree = "<group>"; };
+		F94AB94622842E4A0091358A /* PIVideoDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIVideoDisplay.h; sourceTree = "<group>"; };
+		F94AB94722842E4A0091358A /* PIReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIReport.h; sourceTree = "<group>"; };
+		F94AB94822842E4A0091358A /* PIConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIConfigure.m; sourceTree = "<group>"; };
+		F94AB94922842E4A0091358A /* PICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICommon.h; sourceTree = "<group>"; };
+		F94AB94A22842E4A0091358A /* PIPingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIPingHelper.h; sourceTree = "<group>"; };
+		F94AB94B22842E4A0091358A /* PIConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIConfigure.h; sourceTree = "<group>"; };
+		F94AB94C22842E4A0091358A /* PICheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICheck.h; sourceTree = "<group>"; };
+		F94AB94D22842E4A0091358A /* PIImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIImageInfo.m; sourceTree = "<group>"; };
+		F94AB94E22842E4A0091358A /* PIGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIGameView.m; sourceTree = "<group>"; };
+		F94AB95022842E4B0091358A /* PIPing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIPing.m; sourceTree = "<group>"; };
+		F94AB95122842E4B0091358A /* PIHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIHttpManager.m; sourceTree = "<group>"; };
+		F94AB95222842E4B0091358A /* PIDownloadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIDownloadView.m; sourceTree = "<group>"; };
+		F94AB95422842E4B0091358A /* PIDownloadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIDownloadView.h; sourceTree = "<group>"; };
+		F94AB95522842E4B0091358A /* PIPingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIPingHelper.m; sourceTree = "<group>"; };
+		F94AB95622842E4B0091358A /* PICheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICheck.m; sourceTree = "<group>"; };
+		F94AB95822842E4B0091358A /* PIDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIDeviceInfo.m; sourceTree = "<group>"; };
+		F94AB95922842E4B0091358A /* PITouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PITouchView.m; sourceTree = "<group>"; };
+		F94AB95A22842E4B0091358A /* PIImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIImageInfo.h; sourceTree = "<group>"; };
+		F94AB95B22842E4B0091358A /* PIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIUtil.h; sourceTree = "<group>"; };
+		F94AB95C22842E4B0091358A /* PIPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIPing.h; sourceTree = "<group>"; };
+		F94AB95D22842E4C0091358A /* PIVideoDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIVideoDecode.h; sourceTree = "<group>"; };
+		F94AB95E22842E4C0091358A /* PIReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIReport.m; sourceTree = "<group>"; };
+		F94AB95F22842E4C0091358A /* PIHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIHttpManager.h; sourceTree = "<group>"; };
+		F94AB96022842E4C0091358A /* PIVideoDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIVideoDisplay.m; sourceTree = "<group>"; };
+		F94AB96222842E4C0091358A /* PlayInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayInView.m; sourceTree = "<group>"; };
+		F94AB96322842E4C0091358A /* PIDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIDeviceInfo.h; sourceTree = "<group>"; };
+		F94AB96422842E4C0091358A /* PlayInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayInView.h; sourceTree = "<group>"; };
+		F94AB96522842E4C0091358A /* PIVideoDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIVideoDecode.m; sourceTree = "<group>"; };
+		F94AB978228431710091358A /* PlayIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayIn.h; sourceTree = "<group>"; };
+		F94AB979228431710091358A /* PlayIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayIn.m; sourceTree = "<group>"; };
+		F9C6BC2A22818B3400E9B4A1 /* PlayINDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayINDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9C6BC2D22818B3400E9B4A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F9C6BC2E22818B3400E9B4A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F9C6BC3022818B3400E9B4A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F9C6BC3122818B3400E9B4A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F9C6BC3622818B3700E9B4A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9C6BC3922818B3700E9B4A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9C6BC3B22818B3700E9B4A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C6BC3C22818B3700E9B4A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F94AB93522842E1A0091358A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9C6BC2722818B3400E9B4A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F94AB97C228432C60091358A /* libplayin.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42A18E6022927B560045E5E0 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				42A18E6222927B7F0045E5E0 /* PISocket.h */,
+				42A18E6322927B7F0045E5E0 /* PISocket.m */,
+				42A18E6122927B760045E5E0 /* Packet.h */,
+				42A18E652292B0440045E5E0 /* PIStream.h */,
+				42A18E662292B0440045E5E0 /* PIStream.m */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		F94AB93922842E1A0091358A /* playin */ = {
+			isa = PBXGroup;
+			children = (
+				42A18E6022927B560045E5E0 /* net */,
+				F94AB978228431710091358A /* PlayIn.h */,
+				F94AB979228431710091358A /* PlayIn.m */,
+				0037957822845BA100B2566E /* PIPlay.h */,
+				0037957922845BA100B2566E /* PIPlay.m */,
+				003795722284580A00B2566E /* PIAuth.h */,
+				003795732284580A00B2566E /* PIAuth.m */,
+				F94AB94C22842E4A0091358A /* PICheck.h */,
+				F94AB95622842E4B0091358A /* PICheck.m */,
+				F94AB94922842E4A0091358A /* PICommon.h */,
+				F94AB94122842E4A0091358A /* PICommon.m */,
+				F94AB94B22842E4A0091358A /* PIConfigure.h */,
+				F94AB94822842E4A0091358A /* PIConfigure.m */,
+				F94AB96322842E4C0091358A /* PIDeviceInfo.h */,
+				F94AB95822842E4B0091358A /* PIDeviceInfo.m */,
+				F94AB95422842E4B0091358A /* PIDownloadView.h */,
+				F94AB95222842E4B0091358A /* PIDownloadView.m */,
+				F94AB94222842E4A0091358A /* PIGameView.h */,
+				F94AB94E22842E4A0091358A /* PIGameView.m */,
+				F94AB95F22842E4C0091358A /* PIHttpManager.h */,
+				F94AB95122842E4B0091358A /* PIHttpManager.m */,
+				F94AB95A22842E4B0091358A /* PIImageInfo.h */,
+				F94AB94D22842E4A0091358A /* PIImageInfo.m */,
+				F94AB95C22842E4B0091358A /* PIPing.h */,
+				F94AB95022842E4B0091358A /* PIPing.m */,
+				F94AB94A22842E4A0091358A /* PIPingHelper.h */,
+				F94AB95522842E4B0091358A /* PIPingHelper.m */,
+				F94AB94722842E4A0091358A /* PIReport.h */,
+				F94AB95E22842E4C0091358A /* PIReport.m */,
+				F94AB94522842E4A0091358A /* PITouchView.h */,
+				F94AB95922842E4B0091358A /* PITouchView.m */,
+				F94AB95B22842E4B0091358A /* PIUtil.h */,
+				F94AB94422842E4A0091358A /* PIUtil.m */,
+				F94AB95D22842E4C0091358A /* PIVideoDecode.h */,
+				F94AB96522842E4C0091358A /* PIVideoDecode.m */,
+				F94AB94622842E4A0091358A /* PIVideoDisplay.h */,
+				F94AB96022842E4C0091358A /* PIVideoDisplay.m */,
+				F94AB96422842E4C0091358A /* PlayInView.h */,
+				F94AB96222842E4C0091358A /* PlayInView.m */,
+			);
+			path = playin;
+			sourceTree = "<group>";
+		};
+		F94AB97B228432C60091358A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9C6BC2122818B3400E9B4A1 = {
+			isa = PBXGroup;
+			children = (
+				F9C6BC2C22818B3400E9B4A1 /* PlayINDemo */,
+				F94AB93922842E1A0091358A /* playin */,
+				F9C6BC2B22818B3400E9B4A1 /* Products */,
+				F94AB97B228432C60091358A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9C6BC2B22818B3400E9B4A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9C6BC2A22818B3400E9B4A1 /* PlayINDemo.app */,
+				F94AB93822842E1A0091358A /* libplayin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9C6BC2C22818B3400E9B4A1 /* PlayINDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F9C6BC2D22818B3400E9B4A1 /* AppDelegate.h */,
+				F9C6BC2E22818B3400E9B4A1 /* AppDelegate.m */,
+				F9C6BC3022818B3400E9B4A1 /* ViewController.h */,
+				F9C6BC3122818B3400E9B4A1 /* ViewController.m */,
+				F9C6BC3622818B3700E9B4A1 /* Assets.xcassets */,
+				F9C6BC3822818B3700E9B4A1 /* LaunchScreen.storyboard */,
+				F9C6BC3B22818B3700E9B4A1 /* Info.plist */,
+				F9C6BC3C22818B3700E9B4A1 /* main.m */,
+			);
+			path = PlayINDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F94AB93722842E1A0091358A /* playin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F94AB94022842E1A0091358A /* Build configuration list for PBXNativeTarget "playin" */;
+			buildPhases = (
+				F94AB93422842E1A0091358A /* Sources */,
+				F94AB93522842E1A0091358A /* Frameworks */,
+				F94AB93622842E1A0091358A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = playin;
+			productName = playin;
+			productReference = F94AB93822842E1A0091358A /* libplayin.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F9C6BC2922818B3400E9B4A1 /* PlayINDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9C6BC4022818B3700E9B4A1 /* Build configuration list for PBXNativeTarget "PlayINDemo" */;
+			buildPhases = (
+				F9C6BC2622818B3400E9B4A1 /* Sources */,
+				F9C6BC2722818B3400E9B4A1 /* Frameworks */,
+				F9C6BC2822818B3400E9B4A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayINDemo;
+			productName = PlayINDemo;
+			productReference = F9C6BC2A22818B3400E9B4A1 /* PlayINDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9C6BC2222818B3400E9B4A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = lijunge;
+				TargetAttributes = {
+					F94AB93722842E1A0091358A = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					F9C6BC2922818B3400E9B4A1 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = F9C6BC2522818B3400E9B4A1 /* Build configuration list for PBXProject "PlayINDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9C6BC2122818B3400E9B4A1;
+			productRefGroup = F9C6BC2B22818B3400E9B4A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9C6BC2922818B3400E9B4A1 /* PlayINDemo */,
+				F94AB93722842E1A0091358A /* playin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9C6BC2822818B3400E9B4A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9C6BC3A22818B3700E9B4A1 /* LaunchScreen.storyboard in Resources */,
+				F9C6BC3722818B3700E9B4A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F94AB93422842E1A0091358A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F94AB97522842E4C0091358A /* PIVideoDisplay.m in Sources */,
+				F94AB97A228431710091358A /* PlayIn.m in Sources */,
+				F94AB96F22842E4C0091358A /* PIDownloadView.m in Sources */,
+				F94AB96622842E4C0091358A /* PICommon.m in Sources */,
+				F94AB97322842E4C0091358A /* PITouchView.m in Sources */,
+				F94AB97622842E4C0091358A /* PlayInView.m in Sources */,
+				F94AB96D22842E4C0091358A /* PIPing.m in Sources */,
+				F94AB96E22842E4C0091358A /* PIHttpManager.m in Sources */,
+				F94AB96A22842E4C0091358A /* PIImageInfo.m in Sources */,
+				F94AB97422842E4C0091358A /* PIReport.m in Sources */,
+				F94AB97122842E4C0091358A /* PICheck.m in Sources */,
+				42A18E672292B0440045E5E0 /* PIStream.m in Sources */,
+				42A18E6422927B7F0045E5E0 /* PISocket.m in Sources */,
+				0037957A22845BA100B2566E /* PIPlay.m in Sources */,
+				F94AB96B22842E4C0091358A /* PIGameView.m in Sources */,
+				003795742284580A00B2566E /* PIAuth.m in Sources */,
+				F94AB96822842E4C0091358A /* PIUtil.m in Sources */,
+				F94AB97022842E4C0091358A /* PIPingHelper.m in Sources */,
+				F94AB96922842E4C0091358A /* PIConfigure.m in Sources */,
+				F94AB97722842E4C0091358A /* PIVideoDecode.m in Sources */,
+				F94AB97222842E4C0091358A /* PIDeviceInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9C6BC2622818B3400E9B4A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9C6BC3222818B3400E9B4A1 /* ViewController.m in Sources */,
+				F9C6BC3D22818B3700E9B4A1 /* main.m in Sources */,
+				F9C6BC2F22818B3400E9B4A1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9C6BC3822818B3700E9B4A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9C6BC3922818B3700E9B4A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F94AB93E22842E1A0091358A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YPNT4LMNL;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F94AB93F22842E1A0091358A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YPNT4LMNL;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9C6BC3E22818B3700E9B4A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F9C6BC3F22818B3700E9B4A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9C6BC4122818B3700E9B4A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YPNT4LMNL;
+				INFOPLIST_FILE = PlayINDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlayINDemo/libplayin",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.playin.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9C6BC4222818B3700E9B4A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YPNT4LMNL;
+				INFOPLIST_FILE = PlayINDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlayINDemo/libplayin",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.playin.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F94AB94022842E1A0091358A /* Build configuration list for PBXNativeTarget "playin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F94AB93E22842E1A0091358A /* Debug */,
+				F94AB93F22842E1A0091358A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9C6BC2522818B3400E9B4A1 /* Build configuration list for PBXProject "PlayINDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9C6BC3E22818B3700E9B4A1 /* Debug */,
+				F9C6BC3F22818B3700E9B4A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9C6BC4022818B3700E9B4A1 /* Build configuration list for PBXNativeTarget "PlayINDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9C6BC4122818B3700E9B4A1 /* Debug */,
+				F9C6BC4222818B3700E9B4A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9C6BC2222818B3400E9B4A1 /* Project object */;
+}
